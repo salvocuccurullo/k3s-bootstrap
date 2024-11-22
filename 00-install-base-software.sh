@@ -5,3 +5,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 echo "Creating Load Balancer service"
 kubectl -n ingress-nginx create -f loadbalabcer.yaml
+
+echo "Installing Foundation Software"
+kubectl create -f k3s-helm-charts/*
