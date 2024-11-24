@@ -1,0 +1,17 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: cert-manager
+spec:
+  targetNamespace: cert-manager
+  createNamespace: true
+  version: v1.16.2
+  chart: jetstack/cert-manager
+  repo: https://charts.jetstack.io
+  valuesContent: |-
+   installCRDs: true
+   ingressShim:
+    defaultIssuerName: letsencrypt-production
+    defaultIssuerKind: ClusterIssuer
+    defaultIssuerGroup: cert-manager.io
+
