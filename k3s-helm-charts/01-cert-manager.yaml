@@ -6,7 +6,7 @@ spec:
   targetNamespace: cert-manager
   createNamespace: true
   version: v1.16.2
-  chart: jetstack/cert-manager
+  chart: cert-manager
   repo: https://charts.jetstack.io
   valuesContent: |-
    installCRDs: true

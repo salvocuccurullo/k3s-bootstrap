@@ -9,4 +9,4 @@ echo "Creating Load Balancer service"
 kubectl -n ingress-nginx create -f loadbalancer.yaml
 
 echo "Installing Foundation Software"
-kubectl create -f k3s-helm-charts/*
+kubectl create -f k3s-helm-charts
