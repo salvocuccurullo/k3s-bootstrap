@@ -10,3 +10,8 @@ kubectl -n ingress-nginx create -f loadbalancer.yaml
 
 echo "Installing Foundation Software"
 kubectl create -f k3s-helm-charts
+
+sleep 60
+
+echo "Installing cluster issuers"
+kubectl create -f reources  
